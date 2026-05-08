@@ -1,12 +1,9 @@
 import React from 'react';
-import { ExternalLink, BookOpen } from 'lucide-react';
-import livroImg from '../assets/livro1.png';
+import { ExternalLink } from 'lucide-react';
 
 const FeaturedAlbum: React.FC = () => {
-  const albumUrl = 'https://open.spotify.com/intl-pt/album/6K3sGhNq9PZSEOxGRH9aCr';
-  const embedUrl = 'https://open.spotify.com/embed/album/6K3sGhNq9PZSEOxGRH9aCr?utm_source=generator&theme=0';
-  const bookUrl = 'https://www.amazon.com.br/Photosynthesis-Hana-Suzuki-Estevam-Melero-ebook/dp/B0F6VXRDY2/ref=sr_1_2?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3AGS1JY83FJRO&dib=eyJ2IjoiMSJ9.KHaeXGEUlrliSZ9SN7ceo6fdgpn5JHy0zs-P66zWEGrjYJcBrCUcBxZi0zF1Hnbkd2VOiwi7RbQTT3RIojggUCu2PRy-cQBtRw74t4boYpzoMXSoZ_PKHQAPm1IFtJHsuLhGfV_Ij12Ap3A3ltYoqqiL7iN0OfiBZu4HePEsYB89E1OYCzXMUPF6mKBWbXVsaCsWT-C0LBkw35B5ha-9nnyNq3dgLbj_vYdYMaPRI-uxApJntGVoYxSCaSZoxzkk0m_HOE8yR12zvO74RxuxddvIlCQwrYr76h0-L-DF7kI.8OgDjdnL55EcxRz0XRhrQTUS-7BH7Me1J6YhaWzikEk&dib_tag=se&keywords=photosynthesis&qid=1773698575&sprefix=photosynthesi%2Caps%2C201&sr=8-2';
-
+  const albumUrl = 'https://open.spotify.com/intl-pt/album/0jPQa8c6O9Dvz5hXA4XNnm?si=EzZOk2BVTQ-V5irBKV42bA';
+  const embedUrl = 'https://open.spotify.com/embed/album/0jPQa8c6O9Dvz5hXA4XNnm?utm_source=generator&theme=0';
   return (
     <section id="featured" className="relative py-20 overflow-hidden">
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6">
@@ -19,7 +16,7 @@ const FeaturedAlbum: React.FC = () => {
           </div>
 
           <h2 className="text-4xl sm:text-5xl md:text-6xl text-ink mb-3">
-            conheça photosynthesis
+            conheça VIRTUAL
           </h2>
           <div className="flex justify-center mb-4">
             <svg width="150" height="10" viewBox="0 0 150 10" className="text-ink/30">
@@ -27,7 +24,7 @@ const FeaturedAlbum: React.FC = () => {
             </svg>
           </div>
           <p className="text-ink/50 text-xl sm:text-2xl max-w-xl mx-auto font-medium">
-            conheça um dos melhores trabalhos de loopx 🔥
+            um dos melhores trabalhos de loopx 🔥
           </p>
         </div>
 
@@ -75,80 +72,6 @@ const FeaturedAlbum: React.FC = () => {
                 ouvir no spotify
                 <ExternalLink size={14} className="group-hover:animate-cartoon-bounce" />
               </a>
-            </div>
-          </div>
-        </div>
-
-        {/* Book Promotion */}
-        <div className="relative max-w-3xl mx-auto">
-          {/* Floating decorations */}
-          <div className="sticker absolute -top-5 -left-5 w-14 h-14 text-2xl animate-cartoon-bounce z-20" style={{ animationDelay: '0.3s' }}>📖</div>
-          <div className="sticker absolute -top-4 -right-4 w-12 h-12 text-xl animate-cartoon-bounce z-20" style={{ animationDelay: '0.8s' }}>🌸</div>
-          <div className="sticker absolute -bottom-4 -left-4 w-11 h-11 text-xl animate-cartoon-bounce z-20" style={{ animationDelay: '1.2s' }}>🍃</div>
-          <div className="sticker absolute -bottom-5 -right-5 w-12 h-12 text-xl animate-cartoon-bounce z-20" style={{ animationDelay: '0.6s' }}>✨</div>
-
-          {/* Book card */}
-          <div className="bg-paper rounded-3xl cartoon-border-xl p-5 sm:p-7 md:p-9">
-            <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
-
-              {/* Book cover image */}
-              <div className="flex-shrink-0">
-                <div className="relative w-48 h-64 sm:w-56 sm:h-72 rounded-2xl cartoon-border overflow-hidden group">
-                  <img 
-                    src={livroImg} 
-                    alt="Photosynthesis - o livro" 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.style.display = 'none';
-                      target.parentElement!.classList.add('bg-gradient-to-br', 'from-[#2d5016]', 'via-[#4a9e5c]', 'to-[#8fce7e]', 'flex', 'items-center', 'justify-center');
-                      target.parentElement!.innerHTML = '<div class="text-center p-4"><div class="text-white text-4xl font-bold mb-1">photo</div><div class="text-white text-4xl font-bold mb-2">synthesis</div><div class="text-white/70 text-base">📖 o livro</div></div>';
-                    }}
-                  />
-                  {/* Spine effect */}
-                  <div className="absolute left-0 top-0 bottom-0 w-3 bg-black/20 rounded-l-2xl pointer-events-none"></div>
-                  {/* Hover overlay */}
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 pointer-events-none rounded-2xl"></div>
-                </div>
-              </div>
-
-              {/* Book info */}
-              <div className="flex-1 text-center md:text-left">
-                <div className="inline-block px-4 py-1.5 mb-4 rounded-full bg-[#4a9e5c]/15 cartoon-border-sm">
-                  <span className="text-base text-[#2d5016] tracking-wider font-bold">📚 livro disponível</span>
-                </div>
-
-                <h3 className="text-3xl sm:text-4xl text-ink font-bold mb-3">
-                  photosynthesis 🌿
-                </h3>
-
-                <p className="text-ink/50 text-lg sm:text-xl mb-2 font-medium leading-relaxed">
-                  projeto imersivo que acompanha uma única narrativa através de uma <strong>light novel</strong> e um álbum instrumental ✨
-                </p>
-
-                <p className="text-ink/35 text-base mb-6 font-medium">
-                  por estevam melero (loopx) & giovanna melero 
-                </p>
-
-                <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
-                  <a
-                    href={bookUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-[#FF9900] text-white font-bold text-lg cartoon-btn border-[#1a1a1a] hover:bg-[#e68a00] transition-colors"
-                  >
-                    <BookOpen size={20} className="group-hover:animate-cartoon-wiggle" />
-                    comprar na amazon
-                    <ExternalLink size={14} className="group-hover:animate-cartoon-bounce" />
-                  </a>
-
-                  <div className="flex items-center gap-2">
-                    <span className="text-xl">📖</span>
-                    <span className="text-ink/40 text-base font-bold">disponível no kindle</span>
-                  </div>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>

@@ -38,9 +38,9 @@ const tracks: TrackItem[] = [
   },
   {
     id: '2',
-    title: 'infinity',
-    spotifyId: '0iiivvaDkYj9Md3cGZ6E1I',
-    spotifyUrl: 'https://open.spotify.com/intl-pt/track/0iiivvaDkYj9Md3cGZ6E1I',
+    title: 'VIRTUAL',
+    spotifyId: '7sMs3C1cnUPaelChaefgE2',
+    spotifyUrl: 'https://open.spotify.com/intl-pt/track/7sMs3C1cnUPaelChaefgE2?si=c29946a878ec4b10',
     description: '',
     emoji: '',
     tags: ['melodic', 'dreamy', 'loop'],
